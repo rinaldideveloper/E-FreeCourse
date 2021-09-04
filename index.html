@@ -11,6 +11,15 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
 		integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
 	<style type="text/css">
 		body {
 			background: url("asset/pexels-negative-space-169573.jpg") no-repeat;
@@ -19,11 +28,13 @@
 			height: 100vh;
 			font-family: 'Segoe UI';
 		}
+
 		.flip-card {
 			background-color: transparent;
 			width: 300px;
 			height: 300px;
 			perspective: 1000px;
+			margin-top: 50px;
 		}
 
 		.flip-card-inner {
@@ -50,7 +61,7 @@
 		}
 
 		.flip-card-front {
-			background-color: white;
+			background-color: #F0FFFF;
 			color: black;
 		}
 
@@ -63,10 +74,11 @@
 </head>
 
 <body>
+	
 	<div class="container p-5">
 		<ul class="nav nav-tabs nav-justified">
 			<li class="nav-item mr-1 active">
-				<a href="#section-one" class="nav-link bg-warning text-white" data-toggle="tab">HTML</a>
+				<a href="#section-one" class="nav-link bg-warning text-white active" data-toggle="tab">HTML</a>
 			</li>
 			<li class="nav-item ml-1">
 				<a href="#section-two" class="nav-link bg-primary text-white" data-toggle="tab">CSS</a>
@@ -77,8 +89,8 @@
 		</ul>
 		<div class="tab-content shadow-lg">
 			<div class="tab-pane fade show bg-white text-dark active" id="section-one">
-				<div class="container">
-					<div class="row" style="height: 800px;;">
+				<div class="container" style="height: 800px; ">
+					<div class="row justify-content-md-center" style="height: 500px;">
 						<div class="flip-card" style="padding: 10px;">
 							<div class="flip-card-inner">
 								<div class="flip-card-front">
@@ -92,42 +104,284 @@
 									<p></p>
 								</div>
 								<div class="flip-card-back">
-									<h3 class="p-4">Author: Codecademy</h3>
+									<h3 class="p-3">Author: Codecademy</h3>
 									<h5>Level: Beginner</h5>
-									
-									<a href="https://www.codecademy.com/learn/make-a-website" class="btn btn-warning" role="button">Lihat</a>
+									<p>Anda akan membangun empat situs web sederhana menggunakan dasar-dasar
+										pengembangan web, termasuk HTML5/CSS3 dan Bootstrap</p>
+									<a href="https://www.codecademy.com/learn/make-a-website" class="btn btn-warning"
+										role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/2.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-us"></p>
+									<p>Udacity</p>
+									<b>
+										<p class="">Intro to HTML and CSS</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-4">Author: Udacity</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Sepanjang kursus ini, Anda akan belajar tentang struktur dasar web -
+										HTML. Anda akan belajar tentang CSS sintaks, Selector, dan unit di CSS</p>
+									<a href="https://www.udacity.com/course/intro-to-html-and-css--ud001"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/3.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>BuildwithAngga</p>
+									<b>
+										<p class="">HTML5 Dasar</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Angga Risky</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Kelas HTML5 dasar ini akan membawa kalian untuk berkenalan terlebih
+										dahulu tentang bagaimana cara membangun suatu Website dengan mudah</p>
+									<a href="https://buildwithangga.com/kelas/html5-dasar?thumbnail=CMUK1046A7.19&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-md-center" style="height: 500px; margin-top: -150px;">
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/01.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>BuildwithAngga</p>
+									<b>
+										<p class="">Convert HTML ke React JS Framework</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Angga Risky</h3>
+									<h5>Level: Intermediate</h5>
+									<p class="p-3">Membangun website yang memiliki perfomance cepat dan responsive
+										design menarik menggunakan React JS sebagai framework JavaScript </p>
+									<a href="https://buildwithangga.com/kelas/convert-html-ke-react-js-framework?thumbnail=CMUK1046A7.28&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/5.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>Udemy</p>
+									<b>
+										<p class="p-1">Mulai Belajar Website dengan HTML</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Arkademy Tech Academy</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Sepanjang kursus ini, Anda akan belajar tentang konsep pemrograman
+										dasar HTML untuk membuat website.</p>
+									<a href="https://www.udemy.com/course/mulai-belajar-website-dengan-html/"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/6.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>Udemy</p>
+									<b>
+										<p class="p-1">Website Design (Indonesian Version)</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-1">Author: Bina Nusantara University</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-1">Pelajaran ini terdiri dari pengetahuan dasar desain web yang
+										berisi tag HTML, sejarah singkat dan pengenalan HTML (multimedia), dan styling
+										CSS</p>
+									<a href="https://buildwithangga.com/kelas/html5-dasar?thumbnail=CMUK1046A7.19&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane fade show bg-white text-dark active" id="section-two">
+				<div class="container" style="height: 800px; ">
+					<div class="row justify-content-md-center" style="height: 500px;">
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/7.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-us"></p>
+									<p>Scrimba</p>
+									<b>
+										<p class="">Learn Flexbox for Free</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-3">Author: Per Harald Borgen</h3>
+									<h5>Level: Intermediate</h5>
+									<p class="p-2">Tutorial ini mengajarkan Anda CSS Flexbox melalui 12 screencast
+										interaktif. Anda
+										akan mempelajari semua konsep kunci Flexbox</p>
+									<a href="https://www.codecademy.com/learn/make-a-website" class="btn btn-warning"
+										role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/2.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-us"></p>
+									<p>Udacity</p>
+									<b>
+										<p class="">Intro to HTML and CSS</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-4">Author: Udacity</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Sepanjang kursus ini, Anda akan belajar tentang struktur dasar web -
+										HTML. Anda akan belajar tentang CSS sintaks, Selector, dan unit di CSS</p>
+									<a href="https://www.udacity.com/course/intro-to-html-and-css--ud001"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/3.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>BuildwithAngga</p>
+									<b>
+										<p class="">HTML5 Dasar</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Angga Risky</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Kelas HTML5 dasar ini akan membawa kalian untuk berkenalan terlebih
+										dahulu tentang bagaimana cara membangun suatu Website dengan mudah</p>
+									<a href="https://buildwithangga.com/kelas/html5-dasar?thumbnail=CMUK1046A7.19&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-md-center" style="height: 500px; margin-top: -150px;">
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/01.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>BuildwithAngga</p>
+									<b>
+										<p class="">Convert HTML ke React JS Framework</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Angga Risky</h3>
+									<h5>Level: Intermediate</h5>
+									<p class="p-3">Membangun website yang memiliki perfomance cepat dan responsive
+										design menarik menggunakan React JS sebagai framework JavaScript </p>
+									<a href="https://buildwithangga.com/kelas/convert-html-ke-react-js-framework?thumbnail=CMUK1046A7.28&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/5.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>Udemy</p>
+									<b>
+										<p class="p-1">Mulai Belajar Website dengan HTML</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-2">Author: Arkademy Tech Academy</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-2">Sepanjang kursus ini, Anda akan belajar tentang konsep pemrograman
+										dasar HTML untuk membuat website.</p>
+									<a href="https://www.udemy.com/course/mulai-belajar-website-dengan-html/"
+										class="btn btn-warning" role="button">Lihat</a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-card" style="padding: 10px;">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="asset/6.png" alt="Avatar"
+										style="width:280px;height:150px; margin-bottom: 20px;">
+									<p class="flag-icon flag-icon-id"></p>
+									<p>Udemy</p>
+									<b>
+										<p class="p-1">Website Design (Indonesian Version)</p>
+									</b>
+									<p></p>
+								</div>
+								<div class="flip-card-back">
+									<h3 class="p-1">Author: Bina Nusantara University</h3>
+									<h5>Level: Beginner</h5>
+									<p class="p-1">Pelajaran ini terdiri dari pengetahuan dasar desain web yang
+										berisi tag HTML, sejarah singkat dan pengenalan HTML (multimedia), dan styling
+										CSS</p>
+									<a href="https://buildwithangga.com/kelas/html5-dasar?thumbnail=CMUK1046A7.19&main_leads=searchresult"
+										class="btn btn-warning" role="button">Lihat</a>
 								</div>
 							</div>
 						</div>
 
 					</div>
+
 				</div>
+
+
+
 			</div>
-			<div class="tab-pane fade bg-white text-dark" id="section-two">
-				<p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima,
-					soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
-					Tempora, placeat ratione porro voluptate odit minima.Lorem ipsum dolor sit amet, consectetur
-					adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos
-					molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-			</div>
-			<div class="tab-pane fade bg-white text-dark" id="section-three">
-				<p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima,
-					soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
-					Tempora, placeat ratione porro voluptate odit minima.Lorem ipsum dolor sit amet, consectetur
-					adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos
-					molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-			</div>
+
+			<div class="tab-pane fade bg-white text-dark" id="section-three"></div>
 		</div>
-	</div>
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
